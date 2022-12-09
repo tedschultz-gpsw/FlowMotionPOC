@@ -11,11 +11,7 @@ class ViewController: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let panel = NSOpenPanel()
-        panel.runModal()
-        let gpmf = GPMFOrientation()
-        gpmf.getOrientationArray()
-        
+
         // Do any additional setup after loading the view.
     }
 
