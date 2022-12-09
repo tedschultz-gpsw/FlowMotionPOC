@@ -14,6 +14,27 @@
 		D5052E362943BD2B00A26816 /* FlowMotionPOCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5052E352943BD2B00A26816 /* FlowMotionPOCTests.swift */; };
 		D5052E402943BD2B00A26816 /* FlowMotionPOCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5052E3F2943BD2B00A26816 /* FlowMotionPOCUITests.swift */; };
 		D5052E422943BD2B00A26816 /* FlowMotionPOCUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5052E412943BD2B00A26816 /* FlowMotionPOCUITestsLaunchTests.swift */; };
+		D5052E592943CA6200A26816 /* GPMFOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5052E532943CA6200A26816 /* GPMFOrientation.swift */; };
+		D5052E5A2943CA6300A26816 /* GPSphericalMetadataProvider.mm in Sources */ = {isa = PBXBuildFile; fileRef = D5052E572943CA6200A26816 /* GPSphericalMetadataProvider.mm */; };
+		D5052E5B2943CA6300A26816 /* SphericalMetadataProvider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5052E582943CA6200A26816 /* SphericalMetadataProvider.cpp */; };
+		D5052E812943CA7000A26816 /* GPMFAssetTrack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5052E5C2943CA6D00A26816 /* GPMFAssetTrack.cpp */; };
+		D5052E822943CA7000A26816 /* GPMFAssetSourceGlobalBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5052E5D2943CA6D00A26816 /* GPMFAssetSourceGlobalBuffer.cpp */; };
+		D5052E832943CA7000A26816 /* GPMFFrameMetadata.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5052E5F2943CA6E00A26816 /* GPMFFrameMetadata.cpp */; };
+		D5052E842943CA7000A26816 /* GPMFAssetTrackSegment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5052E602943CA6E00A26816 /* GPMFAssetTrackSegment.cpp */; };
+		D5052E852943CA7000A26816 /* GPMFAssetSourceMP4Writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5052E612943CA6E00A26816 /* GPMFAssetSourceMP4Writer.cpp */; };
+		D5052E862943CA7000A26816 /* GPMFAssetTrackTimeline.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5052E622943CA6E00A26816 /* GPMFAssetTrackTimeline.cpp */; };
+		D5052E872943CA7000A26816 /* GPMFAssetSamples.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5052E652943CA6E00A26816 /* GPMFAssetSamples.cpp */; };
+		D5052E882943CA7000A26816 /* Vector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5052E672943CA6E00A26816 /* Vector.cpp */; };
+		D5052E892943CA7000A26816 /* GPMFAssetSourceFFMPEG.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5052E682943CA6E00A26816 /* GPMFAssetSourceFFMPEG.cpp */; };
+		D5052E8A2943CA7000A26816 /* GPMFtimeline.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5052E6A2943CA6E00A26816 /* GPMFtimeline.cpp */; };
+		D5052E8B2943CA7000A26816 /* GPMFAssetSource.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5052E6D2943CA6E00A26816 /* GPMFAssetSource.cpp */; };
+		D5052E8C2943CA7000A26816 /* Matrix44.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5052E6E2943CA6E00A26816 /* Matrix44.cpp */; };
+		D5052E8D2943CA7000A26816 /* Quaternion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5052E6F2943CA6E00A26816 /* Quaternion.cpp */; };
+		D5052E8E2943CA7000A26816 /* GPMFTrimMedia.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5052E722943CA6F00A26816 /* GPMFTrimMedia.cpp */; };
+		D5052E8F2943CA7000A26816 /* GPMFURI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5052E732943CA6F00A26816 /* GPMFURI.cpp */; };
+		D5052E902943CA7000A26816 /* GPMFRational.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5052E792943CA6F00A26816 /* GPMFRational.cpp */; };
+		D5052E912943CA7000A26816 /* GPMFAssetSourceMP4Reader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5052E7A2943CA6F00A26816 /* GPMFAssetSourceMP4Reader.cpp */; };
+		D5052E922943CA7000A26816 /* GPMFTimeRange.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5052E802943CA7000A26816 /* GPMFTimeRange.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +66,49 @@
 		D5052E3B2943BD2B00A26816 /* FlowMotionPOCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlowMotionPOCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5052E3F2943BD2B00A26816 /* FlowMotionPOCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowMotionPOCUITests.swift; sourceTree = "<group>"; };
 		D5052E412943BD2B00A26816 /* FlowMotionPOCUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowMotionPOCUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D5052E522943CA6200A26816 /* FlowMotionPOC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FlowMotionPOC-Bridging-Header.h"; sourceTree = "<group>"; };
+		D5052E532943CA6200A26816 /* GPMFOrientation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPMFOrientation.swift; sourceTree = "<group>"; };
+		D5052E552943CA6200A26816 /* SphericalMetadataProvider.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SphericalMetadataProvider.hpp; sourceTree = "<group>"; };
+		D5052E562943CA6200A26816 /* GPSphericalMetadataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPSphericalMetadataProvider.h; sourceTree = "<group>"; };
+		D5052E572943CA6200A26816 /* GPSphericalMetadataProvider.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GPSphericalMetadataProvider.mm; sourceTree = "<group>"; };
+		D5052E582943CA6200A26816 /* SphericalMetadataProvider.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SphericalMetadataProvider.cpp; sourceTree = "<group>"; };
+		D5052E5C2943CA6D00A26816 /* GPMFAssetTrack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GPMFAssetTrack.cpp; sourceTree = "<group>"; };
+		D5052E5D2943CA6D00A26816 /* GPMFAssetSourceGlobalBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GPMFAssetSourceGlobalBuffer.cpp; sourceTree = "<group>"; };
+		D5052E5E2943CA6E00A26816 /* GPMFURI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPMFURI.h; sourceTree = "<group>"; };
+		D5052E5F2943CA6E00A26816 /* GPMFFrameMetadata.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GPMFFrameMetadata.cpp; sourceTree = "<group>"; };
+		D5052E602943CA6E00A26816 /* GPMFAssetTrackSegment.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GPMFAssetTrackSegment.cpp; sourceTree = "<group>"; };
+		D5052E612943CA6E00A26816 /* GPMFAssetSourceMP4Writer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GPMFAssetSourceMP4Writer.cpp; sourceTree = "<group>"; };
+		D5052E622943CA6E00A26816 /* GPMFAssetTrackTimeline.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GPMFAssetTrackTimeline.cpp; sourceTree = "<group>"; };
+		D5052E632943CA6E00A26816 /* GPMFTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPMFTypes.h; sourceTree = "<group>"; };
+		D5052E642943CA6E00A26816 /* Quaternion.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Quaternion.hpp; sourceTree = "<group>"; };
+		D5052E652943CA6E00A26816 /* GPMFAssetSamples.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GPMFAssetSamples.cpp; sourceTree = "<group>"; };
+		D5052E662943CA6E00A26816 /* GPMFAssetSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPMFAssetSource.h; sourceTree = "<group>"; };
+		D5052E672943CA6E00A26816 /* Vector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Vector.cpp; sourceTree = "<group>"; };
+		D5052E682943CA6E00A26816 /* GPMFAssetSourceFFMPEG.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GPMFAssetSourceFFMPEG.cpp; sourceTree = "<group>"; };
+		D5052E692943CA6E00A26816 /* GPMFFrameMetadata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPMFFrameMetadata.h; sourceTree = "<group>"; };
+		D5052E6A2943CA6E00A26816 /* GPMFtimeline.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GPMFtimeline.cpp; sourceTree = "<group>"; };
+		D5052E6B2943CA6E00A26816 /* GPMFAssetSourceMP4Writer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPMFAssetSourceMP4Writer.h; sourceTree = "<group>"; };
+		D5052E6C2943CA6E00A26816 /* GPMFAssetTrackSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPMFAssetTrackSegment.h; sourceTree = "<group>"; };
+		D5052E6D2943CA6E00A26816 /* GPMFAssetSource.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GPMFAssetSource.cpp; sourceTree = "<group>"; };
+		D5052E6E2943CA6E00A26816 /* Matrix44.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Matrix44.cpp; sourceTree = "<group>"; };
+		D5052E6F2943CA6E00A26816 /* Quaternion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Quaternion.cpp; sourceTree = "<group>"; };
+		D5052E702943CA6F00A26816 /* GPMFAssetTrackTimeline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPMFAssetTrackTimeline.h; sourceTree = "<group>"; };
+		D5052E712943CA6F00A26816 /* GPMFAssetTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPMFAssetTrack.h; sourceTree = "<group>"; };
+		D5052E722943CA6F00A26816 /* GPMFTrimMedia.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GPMFTrimMedia.cpp; sourceTree = "<group>"; };
+		D5052E732943CA6F00A26816 /* GPMFURI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GPMFURI.cpp; sourceTree = "<group>"; };
+		D5052E742943CA6F00A26816 /* GPMFTimeRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPMFTimeRange.h; sourceTree = "<group>"; };
+		D5052E752943CA6F00A26816 /* GPMFAssetSourceMP4Reader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPMFAssetSourceMP4Reader.h; sourceTree = "<group>"; };
+		D5052E762943CA6F00A26816 /* GPMFAssetSamples.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPMFAssetSamples.h; sourceTree = "<group>"; };
+		D5052E772943CA6F00A26816 /* GPMFAssetSourceFFMPEG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPMFAssetSourceFFMPEG.h; sourceTree = "<group>"; };
+		D5052E782943CA6F00A26816 /* GPMFAssetSourceGlobalBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPMFAssetSourceGlobalBuffer.h; sourceTree = "<group>"; };
+		D5052E792943CA6F00A26816 /* GPMFRational.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GPMFRational.cpp; sourceTree = "<group>"; };
+		D5052E7A2943CA6F00A26816 /* GPMFAssetSourceMP4Reader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GPMFAssetSourceMP4Reader.cpp; sourceTree = "<group>"; };
+		D5052E7B2943CA6F00A26816 /* GPMFRational.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPMFRational.h; sourceTree = "<group>"; };
+		D5052E7C2943CA6F00A26816 /* GPMFTimeline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPMFTimeline.h; sourceTree = "<group>"; };
+		D5052E7D2943CA6F00A26816 /* GPMFTrimMedia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPMFTrimMedia.h; sourceTree = "<group>"; };
+		D5052E7E2943CA6F00A26816 /* Vector.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Vector.hpp; sourceTree = "<group>"; };
+		D5052E7F2943CA7000A26816 /* Matrix44.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Matrix44.hpp; sourceTree = "<group>"; };
+		D5052E802943CA7000A26816 /* GPMFTimeRange.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GPMFTimeRange.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +139,7 @@
 		D5052E172943BD2900A26816 = {
 			isa = PBXGroup;
 			children = (
+				D5052E522943CA6200A26816 /* FlowMotionPOC-Bridging-Header.h */,
 				D5052E222943BD2900A26816 /* FlowMotionPOC */,
 				D5052E342943BD2B00A26816 /* FlowMotionPOCTests */,
 				D5052E3E2943BD2B00A26816 /* FlowMotionPOCUITests */,
@@ -95,8 +160,14 @@
 		D5052E222943BD2900A26816 /* FlowMotionPOC */ = {
 			isa = PBXGroup;
 			children = (
+				D5052E512943CA4A00A26816 /* Libs */,
 				D5052E232943BD2900A26816 /* AppDelegate.swift */,
 				D5052E252943BD2900A26816 /* ViewController.swift */,
+				D5052E532943CA6200A26816 /* GPMFOrientation.swift */,
+				D5052E562943CA6200A26816 /* GPSphericalMetadataProvider.h */,
+				D5052E572943CA6200A26816 /* GPSphericalMetadataProvider.mm */,
+				D5052E582943CA6200A26816 /* SphericalMetadataProvider.cpp */,
+				D5052E552943CA6200A26816 /* SphericalMetadataProvider.hpp */,
 				D5052E272943BD2B00A26816 /* Assets.xcassets */,
 				D5052E292943BD2B00A26816 /* Main.storyboard */,
 				D5052E2C2943BD2B00A26816 /* FlowMotionPOC.entitlements */,
@@ -119,6 +190,50 @@
 				D5052E412943BD2B00A26816 /* FlowMotionPOCUITestsLaunchTests.swift */,
 			);
 			path = FlowMotionPOCUITests;
+			sourceTree = "<group>";
+		};
+		D5052E512943CA4A00A26816 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				D5052E652943CA6E00A26816 /* GPMFAssetSamples.cpp */,
+				D5052E762943CA6F00A26816 /* GPMFAssetSamples.h */,
+				D5052E6D2943CA6E00A26816 /* GPMFAssetSource.cpp */,
+				D5052E662943CA6E00A26816 /* GPMFAssetSource.h */,
+				D5052E682943CA6E00A26816 /* GPMFAssetSourceFFMPEG.cpp */,
+				D5052E772943CA6F00A26816 /* GPMFAssetSourceFFMPEG.h */,
+				D5052E5D2943CA6D00A26816 /* GPMFAssetSourceGlobalBuffer.cpp */,
+				D5052E782943CA6F00A26816 /* GPMFAssetSourceGlobalBuffer.h */,
+				D5052E7A2943CA6F00A26816 /* GPMFAssetSourceMP4Reader.cpp */,
+				D5052E752943CA6F00A26816 /* GPMFAssetSourceMP4Reader.h */,
+				D5052E612943CA6E00A26816 /* GPMFAssetSourceMP4Writer.cpp */,
+				D5052E6B2943CA6E00A26816 /* GPMFAssetSourceMP4Writer.h */,
+				D5052E5C2943CA6D00A26816 /* GPMFAssetTrack.cpp */,
+				D5052E712943CA6F00A26816 /* GPMFAssetTrack.h */,
+				D5052E602943CA6E00A26816 /* GPMFAssetTrackSegment.cpp */,
+				D5052E6C2943CA6E00A26816 /* GPMFAssetTrackSegment.h */,
+				D5052E622943CA6E00A26816 /* GPMFAssetTrackTimeline.cpp */,
+				D5052E702943CA6F00A26816 /* GPMFAssetTrackTimeline.h */,
+				D5052E5F2943CA6E00A26816 /* GPMFFrameMetadata.cpp */,
+				D5052E692943CA6E00A26816 /* GPMFFrameMetadata.h */,
+				D5052E792943CA6F00A26816 /* GPMFRational.cpp */,
+				D5052E7B2943CA6F00A26816 /* GPMFRational.h */,
+				D5052E6A2943CA6E00A26816 /* GPMFtimeline.cpp */,
+				D5052E7C2943CA6F00A26816 /* GPMFTimeline.h */,
+				D5052E802943CA7000A26816 /* GPMFTimeRange.cpp */,
+				D5052E742943CA6F00A26816 /* GPMFTimeRange.h */,
+				D5052E722943CA6F00A26816 /* GPMFTrimMedia.cpp */,
+				D5052E7D2943CA6F00A26816 /* GPMFTrimMedia.h */,
+				D5052E632943CA6E00A26816 /* GPMFTypes.h */,
+				D5052E732943CA6F00A26816 /* GPMFURI.cpp */,
+				D5052E5E2943CA6E00A26816 /* GPMFURI.h */,
+				D5052E6E2943CA6E00A26816 /* Matrix44.cpp */,
+				D5052E7F2943CA7000A26816 /* Matrix44.hpp */,
+				D5052E6F2943CA6E00A26816 /* Quaternion.cpp */,
+				D5052E642943CA6E00A26816 /* Quaternion.hpp */,
+				D5052E672943CA6E00A26816 /* Vector.cpp */,
+				D5052E7E2943CA6F00A26816 /* Vector.hpp */,
+			);
+			path = Libs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,6 +304,7 @@
 				TargetAttributes = {
 					D5052E1F2943BD2900A26816 = {
 						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = 1410;
 					};
 					D5052E302943BD2B00A26816 = {
 						CreatedOnToolsVersion = 14.1;
@@ -251,8 +367,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5052E5A2943CA6300A26816 /* GPSphericalMetadataProvider.mm in Sources */,
 				D5052E262943BD2900A26816 /* ViewController.swift in Sources */,
+				D5052E922943CA7000A26816 /* GPMFTimeRange.cpp in Sources */,
+				D5052E902943CA7000A26816 /* GPMFRational.cpp in Sources */,
+				D5052E842943CA7000A26816 /* GPMFAssetTrackSegment.cpp in Sources */,
 				D5052E242943BD2900A26816 /* AppDelegate.swift in Sources */,
+				D5052E8C2943CA7000A26816 /* Matrix44.cpp in Sources */,
+				D5052E8A2943CA7000A26816 /* GPMFtimeline.cpp in Sources */,
+				D5052E8F2943CA7000A26816 /* GPMFURI.cpp in Sources */,
+				D5052E872943CA7000A26816 /* GPMFAssetSamples.cpp in Sources */,
+				D5052E852943CA7000A26816 /* GPMFAssetSourceMP4Writer.cpp in Sources */,
+				D5052E822943CA7000A26816 /* GPMFAssetSourceGlobalBuffer.cpp in Sources */,
+				D5052E832943CA7000A26816 /* GPMFFrameMetadata.cpp in Sources */,
+				D5052E882943CA7000A26816 /* Vector.cpp in Sources */,
+				D5052E8D2943CA7000A26816 /* Quaternion.cpp in Sources */,
+				D5052E5B2943CA6300A26816 /* SphericalMetadataProvider.cpp in Sources */,
+				D5052E862943CA7000A26816 /* GPMFAssetTrackTimeline.cpp in Sources */,
+				D5052E912943CA7000A26816 /* GPMFAssetSourceMP4Reader.cpp in Sources */,
+				D5052E812943CA7000A26816 /* GPMFAssetTrack.cpp in Sources */,
+				D5052E892943CA7000A26816 /* GPMFAssetSourceFFMPEG.cpp in Sources */,
+				D5052E592943CA6200A26816 /* GPMFOrientation.swift in Sources */,
+				D5052E8E2943CA7000A26816 /* GPMFTrimMedia.cpp in Sources */,
+				D5052E8B2943CA7000A26816 /* GPMFAssetSource.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +493,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -409,6 +547,8 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
+				"SWIFT_OBJC_INTERFACE_HEADER_NAME[arch=*]" = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Release;
@@ -418,6 +558,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = FlowMotionPOC/FlowMotionPOC.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -436,6 +577,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tedschultz.FlowMotionPOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/tedschultz/FlowMotionPOC/FlowMotionPOC-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Swift.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -445,6 +589,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = FlowMotionPOC/FlowMotionPOC.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -463,6 +608,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tedschultz.FlowMotionPOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/tedschultz/FlowMotionPOC/FlowMotionPOC-Bridging-Header.h";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(SWIFT_MODULE_NAME)-Swift.h";
+				"SWIFT_OBJC_INTERFACE_HEADER_NAME[arch=*]" = "$(SWIFT_MODULE_NAME)-Swift.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
