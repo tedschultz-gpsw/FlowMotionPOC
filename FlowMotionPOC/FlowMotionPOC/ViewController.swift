@@ -9,33 +9,37 @@ import Cocoa
 
 class ViewController: NSViewController {
     
-    func getVideo() {
-        let panel = NSOpenPanel()
-        panel.runModal()
-        guard let url = panel.urls.first else { return }
-        let data = try? Data(contentsOf: url)
-    }
+    private var selectedVideoURL: URL?
+    private var selectedCSVURL: URL?
     
-    func getCSVFile() {
-        let panel = NSOpenPanel()
-        panel.runModal()
-        guard let url = panel.urls.first else { return }
-        let data = try? Data(contentsOf: url)
-    }
+    // MARK: - View Life Cycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        getVideo()
-        getCSVFile()
-        // Do any additional setup after loading the view.
     }
-
-    override var representedObject: Any? {
-        didSet {
-        // Update the view, if already loaded.
-        }
+    
+    // MARK: - Actions
+    
+    @IBAction private func performSelectVideo(_ sender: AnyObject) {
+        let panel = NSOpenPanel()
+        panel.runModal()
+        selectedVideoURL = panel.urls.first
     }
-
-
+    
+    @IBAction private func performSelectCSVFile(_ sender: AnyObject) {
+        let panel = NSOpenPanel()
+        panel.runModal()
+        selectedCSVURL = panel.urls.first
+    }
+    
+    @IBAction private func performStart(_ sender: AnyObject) {
+        
+        guard let selectedVideoURL, let selectedCSVURL else { return }
+        
+        let selectedVideoData = try? Data(contentsOf: selectedVideoURL)
+        
+        // TODO: parse/decode the CSV
+        
+    }
 }
 
