@@ -40,6 +40,14 @@ class ViewController: NSViewController {
         
         // TODO: parse/decode the CSV
         
+        Task {
+            do {
+                // TODO: pass in the parsed data from the CSV
+                try await OpticalFlowProcessor.shared.process(videoURL: selectedVideoURL)
+            } catch let error {
+                print(error.localizedDescription)
+            }
+        }
     }
 }
 
