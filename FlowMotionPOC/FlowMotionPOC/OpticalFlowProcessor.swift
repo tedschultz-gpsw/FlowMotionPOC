@@ -45,12 +45,14 @@ final class OpticalFlowProcessor {
         // Process only first two frames
         var previousFrame = initialFrame
         let nextFrame = reader.nextFrame()
-        await process(currentFrame: nextFrame!, previousFrame: previousFrame)
+        // TODO: pass the appropriate orientation
+        await process(currentFrame: nextFrame!, currentFrameOrientation: .up, previousFrame: previousFrame)
             
         // Iteratate all frames
 //        var previousFrame = initialFrame
 //        while let nextFrame = reader.nextFrame() {
-//              await process(currentFrame: nextFrame, previousFrame: previousFrame)
+                // TODO: pass the appropriate orientation
+//              await process(currentFrame: nextFrame, currentFrameOrientation: .up, previousFrame: previousFrame)
 //              previousFrame = nextFrame
 //        }
             
@@ -58,8 +60,8 @@ final class OpticalFlowProcessor {
         
     }
     
-    private func process(currentFrame: CVPixelBuffer, previousFrame: CVPixelBuffer) async {
-        let visionRequest = VNGenerateOpticalFlowRequest(targetedCVPixelBuffer: currentFrame, options: [:])
+    private func process(currentFrame: CVPixelBuffer, currentFrameOrientation: CGImagePropertyOrientation, previousFrame: CVPixelBuffer) async {
+        let visionRequest = VNGenerateOpticalFlowRequest(targetedCVPixelBuffer: currentFrame, orientation: currentFrameOrientation, options: [:])
         
         let requestHandler = VNSequenceRequestHandler()
         
