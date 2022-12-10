@@ -18,8 +18,8 @@ final class OpticalFlowProcessor {
     static let shared = OpticalFlowProcessor()
     
     private var inputAsset: AVAsset?
-    private var outputAsset: AVAsset?
     private var videoURL: URL?
+    private var videoWriter = VideoWriter()
     
     func process(videoURL: URL) async throws {
         self.videoURL = videoURL
@@ -46,8 +46,14 @@ final class OpticalFlowProcessor {
         var previousFrame = initialFrame
         let nextFrame = reader.nextFrame()
         // TODO: pass the appropriate orientation
-        await process(currentFrame: nextFrame!, currentFrameOrientation: .up, previousFrame: previousFrame)
+        if let pixelBuffer = await process(currentFrame: nextFrame!, currentFrameOrientation: .up, previousFrame: previousFrame) {
+            try videoWriter.start()
+            await videoWriter.write(pixelBuffer: pixelBuffer)
+            await videoWriter.finishWriting()
+        }
             
+        
+        
         // Iteratate all frames
 //        var previousFrame = initialFrame
 //        while let nextFrame = reader.nextFrame() {
@@ -60,23 +66,29 @@ final class OpticalFlowProcessor {
         
     }
     
-    private func process(currentFrame: CVPixelBuffer, currentFrameOrientation: CGImagePropertyOrientation, previousFrame: CVPixelBuffer) async {
+    private func process(currentFrame: CVPixelBuffer, currentFrameOrientation: CGImagePropertyOrientation, previousFrame: CVPixelBuffer) async -> CVPixelBuffer? {
         let visionRequest = VNGenerateOpticalFlowRequest(targetedCVPixelBuffer: currentFrame, orientation: currentFrameOrientation, options: [:])
         
         let requestHandler = VNSequenceRequestHandler()
+        
+        var pixelBuffer: CVPixelBuffer?
         
         do {
             try requestHandler.perform([visionRequest], on: previousFrame)
             
             if let pixelBufferObservation = visionRequest.results?.first as? VNPixelBufferObservation {
-                let image = CIImage(cvPixelBuffer: pixelBufferObservation.pixelBuffer)
+                pixelBuffer = pixelBufferObservation.pixelBuffer
+//                let image = CIImage(cvPixelBuffer: pixelBufferObservation.pixelBuffer)
                 
-                let path = image.saveJPG("test3.jpg")
-                print("path = \(path!)")
+//                let path = image.saveJPG("test3.jpg")
+//                print("path = \(path!)")
             }
         } catch {
             print("Vision Request failed: \(error.localizedDescription)")
+            return nil
         }
+        
+        return pixelBuffer
     }
 }
 

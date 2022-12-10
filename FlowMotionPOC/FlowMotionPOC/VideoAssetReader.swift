@@ -43,8 +43,10 @@ final class VideoAssetReader {
             return false
         }
         
+        //kCVPixelFormatType_32ARGB
+        //kCVPixelFormatType_420YpCbCr8BiPlanarFullRange
         assetReaderOutput = AVAssetReaderTrackOutput(track: track,
-                                                     outputSettings: [kCVPixelBufferPixelFormatTypeKey as String: kCVPixelFormatType_420YpCbCr8BiPlanarFullRange])
+                                                     outputSettings: [kCVPixelBufferPixelFormatTypeKey as String: kCVPixelFormatType_4444AYpCbCr16])
         guard assetReaderOutput != nil else {
             print("assetReaderOutput is nil!")
             return false
