@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C068F60D29440A0B00ADF497 /* CIImage+JPG.swift in Sources */ = {isa = PBXBuildFile; fileRef = C068F60929440A0B00ADF497 /* CIImage+JPG.swift */; };
+		C068F60E29440A0B00ADF497 /* OpticalFlowProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C068F60A29440A0B00ADF497 /* OpticalFlowProcessor.swift */; };
+		C068F61029440A0B00ADF497 /* VideoAssetReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C068F60C29440A0B00ADF497 /* VideoAssetReader.swift */; };
 		D57706B7294402440020BC00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57706B6294402440020BC00 /* AppDelegate.swift */; };
 		D57706B9294402440020BC00 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57706B8294402440020BC00 /* ViewController.swift */; };
 		D57706BB294402450020BC00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D57706BA294402450020BC00 /* Assets.xcassets */; };
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C068F60929440A0B00ADF497 /* CIImage+JPG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CIImage+JPG.swift"; sourceTree = "<group>"; };
+		C068F60A29440A0B00ADF497 /* OpticalFlowProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpticalFlowProcessor.swift; sourceTree = "<group>"; };
+		C068F60C29440A0B00ADF497 /* VideoAssetReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoAssetReader.swift; sourceTree = "<group>"; };
 		D57706B3294402440020BC00 /* FlowMotionPOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlowMotionPOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D57706B6294402440020BC00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D57706B8294402440020BC00 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +103,9 @@
 			children = (
 				D57706B6294402440020BC00 /* AppDelegate.swift */,
 				D57706B8294402440020BC00 /* ViewController.swift */,
+				C068F60A29440A0B00ADF497 /* OpticalFlowProcessor.swift */,
+				C068F60C29440A0B00ADF497 /* VideoAssetReader.swift */,
+				C068F60929440A0B00ADF497 /* CIImage+JPG.swift */,
 				D57706BA294402450020BC00 /* Assets.xcassets */,
 				D57706BC294402450020BC00 /* Main.storyboard */,
 				D57706BF294402450020BC00 /* FlowMotionPOC.entitlements */,
@@ -251,8 +260,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C068F61029440A0B00ADF497 /* VideoAssetReader.swift in Sources */,
 				D57706B9294402440020BC00 /* ViewController.swift in Sources */,
+				C068F60E29440A0B00ADF497 /* OpticalFlowProcessor.swift in Sources */,
 				D57706B7294402440020BC00 /* AppDelegate.swift in Sources */,
+				C068F60D29440A0B00ADF497 /* CIImage+JPG.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
