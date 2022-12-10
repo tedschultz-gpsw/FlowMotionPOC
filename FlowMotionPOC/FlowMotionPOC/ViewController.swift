@@ -34,7 +34,7 @@ class ViewController: NSViewController {
     
     @IBAction private func performStart(_ sender: AnyObject) {
         
-        guard let selectedVideoURL, let selectedCSVURL else { return }
+        guard let selectedVideoURL /*, let selectedCSVURL*/ else { return }
         
         let selectedVideoData = try? Data(contentsOf: selectedVideoURL)
         
